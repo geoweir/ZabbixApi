@@ -15,14 +15,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 2.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      - uses: EasyDesk/action-dotnet-publish@v1
+        with:
+          # (Optional) The path to the project that should be published.
+          # If not specified, defaults to '.'.
+          path: '<path>'
+
+          # (Optional) Additional command line arguments to be passed to 'dotnet test'.
+          # If not specified, defaults to 'packages'.
+          output-dir: '<path-to-output-dir>'
+
+          # (Optional) The build configuration.
+          # If not specified, defaults to 'Release'.
+          build-configuration: Release
+
+          # (Optional) Whether to skip the build using the '--no-build' flag.
+          # If not specified, defaults to true.
+          skip-build: true
