@@ -6,7 +6,7 @@
     <Authors>Henrique Caires</Authors>
     <PackageTags>Zabbix ZabbixApi</PackageTags>
     <PackageProjectUrl>https://github.com/geoweir/ZabbixApi</PackageProjectUrl>
-	<PackageIcon>https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png</PackageIcon>
+	<PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/geoweir/ZabbixApi</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
 	<VersionPrefix>6.0.0</VersionPrefix>
