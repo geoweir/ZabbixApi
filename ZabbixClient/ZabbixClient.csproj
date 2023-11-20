@@ -4,10 +4,10 @@
     <PackageId>ZabbixClient</PackageId>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Authors>Henrique Caires</Authors>
-    <PackageTags>Zabbix ZabbixApi</PackageTags>
-    <PackageProjectUrl>https://github.com/geoweir/ZabbixApi</PackageProjectUrl>
+    <PackageTags>Zabbix ZabbixApi ZabbixClient</PackageTags>
+    <PackageProjectUrl>https://github.com/geoweir/ZabbixClient</PackageProjectUrl>
 	<PackageIcon>icon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/geoweir/ZabbixApi</RepositoryUrl>
+    <RepositoryUrl>https://github.com/geoweir/ZabbixClient</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
 	<VersionPrefix>6.0.0</VersionPrefix>
 	<VersionSuffix></VersionSuffix>
@@ -16,6 +16,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	<TargetFrameworks>net6.0</TargetFrameworks>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,7 +24,9 @@
   </ItemGroup>
 
     <ItemGroup>
-        <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+        <None Include="LICENSE.txt" Pack="true" PackagePath="" />
+		<None Include="icon.png" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="" />
     </ItemGroup>
 
   <ItemGroup>
@@ -31,5 +34,11 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1">
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
