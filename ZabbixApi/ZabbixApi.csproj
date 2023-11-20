@@ -6,9 +6,9 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Authors>Henrique Caires</Authors>
     <PackageTags>Zabbix ZabbixApi</PackageTags>
-    <PackageProjectUrl>https://github.com/HenriqueCaires/ZabbixApi</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/geoweir/ZabbixApi</PackageProjectUrl>
     <PackageIconUrl>https://www.zabbix.com/favicon.ico</PackageIconUrl>
-    <RepositoryUrl>https://github.com/HenriqueCaires/ZabbixApi</RepositoryUrl>
+    <RepositoryUrl>https://github.com/geoweir/ZabbixApi</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
 	<VersionPrefix>5.0.0-beta2</VersionPrefix>
 	<VersionSuffix></VersionSuffix>
