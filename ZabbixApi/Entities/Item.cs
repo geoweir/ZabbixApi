@@ -1,9 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using ZabbixApi.Helper;
+using ZabbixClient.Helper;
 
-namespace ZabbixApi.Entities
+namespace ZabbixClient.Entities
 {
     public partial class Item : EntityBase
     {

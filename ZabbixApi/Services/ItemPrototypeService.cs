@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZabbixApi.Entities;
-using ZabbixApi.Helper;
-using ZabbixApi;
+using ZabbixClient.Entities;
+using ZabbixClient.Helper;
+using ZabbixClient;
 
-namespace ZabbixApi.Services
+namespace ZabbixClient.Services
 {
     public interface IItemPrototypeService : ICRUDService<ItemPrototype, ItemPrototypeInclude>
     {

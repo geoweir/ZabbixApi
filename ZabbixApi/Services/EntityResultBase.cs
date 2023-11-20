@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZabbixApi.Services
+namespace ZabbixClient.Services
 {
     public abstract class EntityResultBase
     {

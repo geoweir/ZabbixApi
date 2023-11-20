@@ -7,10 +7,10 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using ZabbixApi.Helper;
-using ZabbixApi.Services;
+using ZabbixClient.Helper;
+using ZabbixClient.Services;
 
-namespace ZabbixApi
+namespace ZabbixClient
 {
     public interface IContext : IDisposable
     {
@@ -87,9 +87,9 @@ namespace ZabbixApi
 
             var config = builder.Build();
 
-            var url = config["ZabbixApi:url"];
-            var user = config["ZabbixApi:user"];
-            var password = config["ZabbixApi:password"];
+            var url = config["ZabbixClient:url"];
+            var user = config["ZabbixClient:user"];
+            var password = config["ZabbixClient:password"];
 
             Initialize(url);
             Authenticate(user, password);
@@ -114,7 +114,7 @@ namespace ZabbixApi
                 Converters = new JsonConverter[] { new Newtonsoft.Json.Converters.JavaScriptDateTimeConverter() }
             };
 
-            Check.IsNotNullOrWhiteSpace(url, "ZabbixApi.url");
+            Check.IsNotNullOrWhiteSpace(url, "ZabbixClient.url");
 
             _url = url;
             _webClient = new WebClient();
@@ -165,8 +165,8 @@ namespace ZabbixApi
 
         public void Authenticate(string user, string password)
         {
-            Check.IsNotNullOrWhiteSpace(user, "ZabbixApi.user");
-            Check.IsNotNullOrWhiteSpace(password, "ZabbixApi.password");
+            Check.IsNotNullOrWhiteSpace(user, "ZabbixClient.user");
+            Check.IsNotNullOrWhiteSpace(password, "ZabbixClient.password");
 
             lock (_webClient)
             {
@@ -179,8 +179,8 @@ namespace ZabbixApi
 
         public async Task AuthenticateAsync(string user, string password)
         {
-            Check.IsNotNullOrWhiteSpace(user, "ZabbixApi.user");
-            Check.IsNotNullOrWhiteSpace(password, "ZabbixApi.password");
+            Check.IsNotNullOrWhiteSpace(user, "ZabbixClient.user");
+            Check.IsNotNullOrWhiteSpace(password, "ZabbixClient.password");
 
             _authenticationToken = await SendRequestAsync<string>(
                 new Dictionary<string, string> { { "username", user }, { "password", password } },

@@ -2,25 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Zabbix</PackageId>
+    <PackageId>ZabbixClient</PackageId>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Authors>Henrique Caires</Authors>
     <PackageTags>Zabbix ZabbixApi</PackageTags>
     <PackageProjectUrl>https://github.com/geoweir/ZabbixApi</PackageProjectUrl>
-    <PackageIconUrl>https://www.zabbix.com/favicon.ico</PackageIconUrl>
+	<PackageIcon>https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png</PackageIcon>
     <RepositoryUrl>https://github.com/geoweir/ZabbixApi</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
-	<VersionPrefix>5.0.0-beta2</VersionPrefix>
+	<VersionPrefix>6.0.0</VersionPrefix>
 	<VersionSuffix></VersionSuffix>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 
+    <ItemGroup>
+        <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+    </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />

@@ -1,8 +1,8 @@
-﻿using ZabbixApi.Entities;
+﻿using ZabbixClient.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ZabbixApi.Services
+namespace ZabbixClient.Services
 {
     public abstract class ServiceBase<TEntity, TInclude> where TEntity : EntityBase
     {

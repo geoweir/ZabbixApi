@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
-using ZabbixApi.Helper;
+using ZabbixClient.Helper;
 
-namespace ZabbixApi.Entities
+namespace ZabbixClient.Entities
 {
     public partial class Action : EntityBase
     {

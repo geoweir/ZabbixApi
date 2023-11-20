@@ -1,13 +1,13 @@
 ﻿using Newtonsoft.Json;
-using ZabbixApi.Helper;
+using ZabbixClient.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZabbixApi;
+using ZabbixClient;
 
-namespace ZabbixApi.Services
+namespace ZabbixClient.Services
 {
     public interface IActionService : ICRUDService<Entities.Action, ActionInclude>
     {

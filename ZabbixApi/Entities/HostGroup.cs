@@ -1,13 +1,13 @@
 ﻿using Newtonsoft.Json;
-using ZabbixApi.Helper;
+using ZabbixClient.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZabbixApi.Entities;
+using ZabbixClient.Entities;
 
-namespace ZabbixApi.Entities
+namespace ZabbixClient.Entities
 {
     public partial class HostGroup : EntityBase
     {

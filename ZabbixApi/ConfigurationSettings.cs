@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ZabbixApi
+namespace ZabbixClient
 {
     public class ConfigurationSettings
     {

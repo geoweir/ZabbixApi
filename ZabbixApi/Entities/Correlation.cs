@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace ZabbixApi.Entities
+namespace ZabbixClient.Entities
 {
     public partial class Correlation : EntityBase
     {

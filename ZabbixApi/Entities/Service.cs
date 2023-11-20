@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZabbixApi.Helper;
+using ZabbixClient.Helper;
 
-namespace ZabbixApi.Entities
+namespace ZabbixClient.Entities
 {
     public partial class Service : EntityBase
     {

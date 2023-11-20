@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ZabbixApi.Helper;
-using ZabbixApi.Entities;
+using ZabbixClient.Helper;
+using ZabbixClient.Entities;
 
-namespace ZabbixApi.Services
+namespace ZabbixClient.Services
 {
     public interface IHostGroupService : ICRUDService<HostGroup, HostGroupInclude>
     {

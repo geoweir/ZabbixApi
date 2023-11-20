@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZabbixApi.Entities;
-using ZabbixApi.Helper;
+using ZabbixClient.Entities;
+using ZabbixClient.Helper;
 
-namespace ZabbixApi.Entities
+namespace ZabbixClient.Entities
 {
     public partial class Graph : EntityBase
     {

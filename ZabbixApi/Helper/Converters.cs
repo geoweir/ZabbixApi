@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZabbixApi.Helper
+namespace ZabbixClient.Helper
 {
     internal class TimestampToDateTimeConverter : JsonConverter
     {

@@ -1,15 +1,15 @@
 ﻿using Newtonsoft.Json;
-using ZabbixApi.Helper;
+using ZabbixClient.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZabbixApi.Entities;
-using ZabbixApi.Services;
+using ZabbixClient.Entities;
+using ZabbixClient.Services;
 using System.ComponentModel;
 
-namespace ZabbixApi.Entities
+namespace ZabbixClient.Entities
 {
     public partial class Host : EntityBase
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ZabbixApi.Entities
+namespace ZabbixClient.Entities
 {
     public class Tag
     {

@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ZabbixApi.Helper;
+using ZabbixClient.Helper;
 
-namespace ZabbixApi.Services
+namespace ZabbixClient.Services
 {
     public interface IValueMapService : ICRUDService<Entities.ValueMap, ValueMapInclude>
     {

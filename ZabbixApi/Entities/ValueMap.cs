@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ZabbixApi.Entities
+namespace ZabbixClient.Entities
 {
     public partial class ValueMap : EntityBase
     {
