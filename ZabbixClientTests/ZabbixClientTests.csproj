@@ -13,12 +13,7 @@
 		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\ZabbixApi\ZabbixClient.csproj" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Reference Include="System">
-	    <HintPath>System</HintPath>
-	  </Reference>
+	  <ProjectReference Include="..\ZabbixClient\ZabbixClient.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 	  <None Update="appsettings.json">
