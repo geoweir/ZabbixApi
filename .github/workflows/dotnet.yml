@@ -1,4 +1,4 @@
-name: "Deploy to NuGet - version set"
+name: "Deploy to NuGet - new key"
 
 on:
   push:
