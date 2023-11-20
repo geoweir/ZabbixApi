@@ -171,7 +171,7 @@ namespace ZabbixApi
             lock (_webClient)
             {
                 _authenticationToken = SendRequest<string>(
-                    new Dictionary<string, string> { { "user", user }, { "password", password } },
+                    new Dictionary<string, string> { { "username", user }, { "password", password } },
                     "user.login",
                     null);
             }
