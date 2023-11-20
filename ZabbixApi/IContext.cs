@@ -183,7 +183,7 @@ namespace ZabbixApi
             Check.IsNotNullOrWhiteSpace(password, "ZabbixApi.password");
 
             _authenticationToken = await SendRequestAsync<string>(
-                new Dictionary<string, string> { { "user", user }, { "password", password } },
+                new Dictionary<string, string> { { "username", user }, { "password", password } },
                 "user.login",
                 null);
         }
