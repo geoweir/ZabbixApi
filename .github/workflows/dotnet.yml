@@ -36,5 +36,12 @@ jobs:
     - name: 'Pack project'
       run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=1.0.0 --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
 
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v3
+      with:
+        name: Zabbix.1.0.0.nupkg
+        path: 'D:\a\ZabbixApi\ZabbixApi\output\Zabbix.1.0.0.nupkg'
+        retention-days: 1
+  
     - name: 'Push package'
       run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}\*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s ${{ env.NUGET_SOURCE_URL }}
