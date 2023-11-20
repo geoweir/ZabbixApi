@@ -34,8 +34,7 @@ namespace ZabbixClient.Services
             @params.AddOrReplace("selectDiscoveryRule", includeHelper.WhatShouldInclude(HostGroupInclude.DiscoveryRule));
             @params.AddOrReplace("selectGroupDiscovery", includeHelper.WhatShouldInclude(HostGroupInclude.GroupDiscovery));
             @params.AddOrReplace("selectHosts", includeHelper.WhatShouldInclude(HostGroupInclude.Hosts));
-            @params.AddOrReplace("selectTemplates", includeHelper.WhatShouldInclude(HostGroupInclude.Templates));
-
+            
             @params.AddOrReplace("filter", filter);
             
             return @params;
