@@ -385,3 +385,5 @@ ASALocalRun/
 
 
 # End of https://www.gitignore.io/api/linux,windows,visualstudio,visualstudiocode
+/.DS_Store
+/ZabbixClient/.DS_Store
