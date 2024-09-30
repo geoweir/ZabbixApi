@@ -138,6 +138,12 @@ namespace ZabbixClient.Entities
         /// 1 - event is suppressed.
         /// </summary>
         public Suppressed suppressed { get; set; }
+
+		/// <summary>
+		/// Operational data with expanded macros.
+		/// </summary>
+		public string opdata { get; set; }
+
         #endregion
 
         #region Associations
