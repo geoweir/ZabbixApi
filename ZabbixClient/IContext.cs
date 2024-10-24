@@ -53,8 +53,9 @@ namespace ZabbixClient
         ITemplateScreenItemService TemplateScreenItems { get; }
         ITemplateScreenService TemplateScreens { get; }
         ITemplateService Templates { get; }
-        ITriggerPrototypeService TriggerPrototypes { get; }
-        ITriggerService Triggers { get; }
+		ITrendService Trends { get; }
+		ITriggerPrototypeService TriggerPrototypes { get; }
+		ITriggerService Triggers { get; }
         IUserGroupService UserGroups { get; }
         IGlobalMacroService GlobalMacros { get; }
         IHostMacroService HostMacros { get; }
@@ -152,7 +153,8 @@ namespace ZabbixClient
             TemplateScreenItems = new TemplateScreenItemService(this);
             TemplateScreens = new TemplateScreenService(this);
             Templates = new TemplateService(this);
-            TriggerPrototypes = new TriggerPrototypeService(this);
+			Trends = new TrendService(this);
+            TriggerPrototypes = new TriggerPrototypeService(this); 
             Triggers = new TriggerService(this);
             UserGroups = new UserGroupService(this);
             GlobalMacros = new GlobalMacroService(this);
@@ -300,8 +302,9 @@ namespace ZabbixClient
         public ITemplateScreenItemService TemplateScreenItems { get; private set; }
         public ITemplateScreenService TemplateScreens { get; private set; }
         public ITemplateService Templates { get; private set; }
-        public ITriggerPrototypeService TriggerPrototypes { get; private set; }
-        public ITriggerService Triggers { get; private set; }
+		public ITrendService Trends { get; private set; }
+		public ITriggerPrototypeService TriggerPrototypes { get; private set; }
+		public ITriggerService Triggers { get; private set; }
         public IUserGroupService UserGroups { get; private set; }
         public IGlobalMacroService GlobalMacros { get; private set; }
         public IHostMacroService HostMacros { get; private set; }
